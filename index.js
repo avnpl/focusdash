@@ -1,6 +1,6 @@
 function endOfWeek(date) {
-  var lastday = date.getDate() - (date.getDay() - 1) + 6;
-  return new Date(date.setDate(lastday));
+  var lastDay = date.getDate() - (date.getDay() - 1) + 6;
+  return new Date(date.setDate(lastDay));
 }
 var eventDate = new Date();
 eventDate.setHours(23);
@@ -55,11 +55,10 @@ function countdown() {
   document.getElementById("days").innerHTML = d;
   document.getElementById("hours").innerHTML = h;
   document.getElementById("minutes").innerHTML = m;
-  document.getElementById("seconds").innerHTML = s;
 
   //console.log(d + ' days ' + h + ' hours ' + m + ' minutes ' + s + ' seconds ' );
 
-  setTimeout(countdown, 1000);
+  setTimeout(countdown, 60000);
 }
 
 countdown();
