@@ -9,6 +9,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 .timerContainer {
