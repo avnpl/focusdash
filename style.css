@@ -54,19 +54,10 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   font-size: 1.1rem;
-  font-family: serif;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   width: 500px;
   text-align: center;
-}
-
-#quote-author {
-  display: none;
-  transition: 0.3s;
-}
-
-#quote :hover + #quote-author {
-  display: block;
 }
 
 hr {
@@ -78,7 +69,6 @@ hr {
 header a {
   text-decoration: none;
   margin-left: 20px;
-
   font-size: 2rem;
   color: white;
 }
