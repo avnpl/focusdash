@@ -44,12 +44,12 @@ function countdown() {
       return response.json();
     })
     .then(function (data) {
-      document.getElementById("quote").innerHTML =
-        '"' +
-        data[bgDate * bgMonth].text +
-        '"' +
-        " - " +
-        data[bgDate * bgMonth].author;
+      document.getElementById("quote-main").innerHTML = `"${
+        data[bgDate * bgMonth].text
+      }"`;
+      document.getElementById("quote-author").innerHTML = `- ${
+        data[bgDate * bgMonth].author
+      }`;
     });
 
   document.getElementById("days").innerHTML = d;

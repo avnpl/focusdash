@@ -54,10 +54,19 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   font-size: 1.1rem;
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   font-weight: 300;
   width: 500px;
   text-align: center;
+}
+
+#quote-author {
+  display: none;
+  transition: 0.3s;
+}
+
+#quote :hover + #quote-author {
+  display: block;
 }
 
 hr {
