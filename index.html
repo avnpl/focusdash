@@ -17,17 +17,18 @@
     <title>FocusDash</title>
   </head>
   <body>
-    <!-- <header class="social">
-        <a href ="https://github.com/Xapocalypae"><i class="fab fa-github"></i></a>
-        <a href= "https://www.instagram.com/xapo_amv/"><i class="fab fa-instagram"></i></a>
-    </header> -->
     <h2>Under Development</h2>
-    <span class="heading">This week ends in</span>
-    <span class="goals">What are your goals to achieve this week?</span>
-    <span id="quote">
+    <div class="heading">This week ends in</div>
+    <div class="goals todo">
+      <h4>What are your goals to achieve this week?</h4>
+      <input type="text" id="user-input" />
+      <button id="btn">Add Task</button>
+      <div id="list"></div>
+    </div>
+    <div id="quote">
       <div id="quote-main"></div>
       <div id="quote-author"></div>
-    </span>
+    </div>
     <table class="timerContainer">
       <tr class="info">
         <td colspan="4"></td>
@@ -51,5 +52,6 @@
 
     <script src="index.js"></script>
     <script src="bg.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
